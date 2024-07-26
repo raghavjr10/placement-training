@@ -1,1 +1,31 @@
+HACKERRANK PROGRAMS :
 
+1.Print Hello world:
+Program:
+a="Hello, World!"
+print (a)
+=================================================
+2.Arithmetic Operations[add,sub,multiply]:
+Program:
+a=int(input("Enter a number1:\n"))
+b=int(input("Enter a number2:\n"))
+c=a+b
+d=a-b
+e=a*b
+print(c)
+print(d)
+print(e)
+===================================================
+3.Arithmetic Operations[Division,Floor Division]:
+Program:
+a = int(input())
+b = int(input())
+print(a//b)
+print(a/b)
+====================================================
+4.Square the numbers using loop:
+Program:
+n = int(input())
+for i in range(n):
+    print(i*i)
+===================================================
