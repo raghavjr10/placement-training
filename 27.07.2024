@@ -1,0 +1,47 @@
+1.To find an identity matrix:
+Program:
+import numpy as np
+matrix = np.identity(4)
+print(matrix)
+===============================================
+2.Mininum,Maximun and Sum of marks of a given list:
+Program:
+grades = [85, 90, 78, 92, 88]
+average_grade = sum(grades) / len(grades)
+highest_grade = max(grades)
+lowest_grade = min(grades)
+above_average = [grade for grade in grades if grade > average_grade]
+print(f"Average Grade: {average_grade:.2f}")
+print(f"Highest Grade: {highest_grade}")
+print(f"Lowest Grade: {lowest_grade}")
+print(f"Above Average: {above_average}")
+===================================================
+3.To Find a given password is strong or weak:
+Program:
+import re
+def password(password):
+    if len(password) < 8:
+        return False
+    if not re.search(r'[A-Z]', password):
+        return False
+    if not re.search(r'[a-z]', password):
+        return False
+    if not re.search(r'[1-9]', password):
+        return False
+    if not re.search(r'[!@#$%^&*]', password):
+        return False
+    return True
+password = input("Enter a password : ")
+if len(password) < 8:
+    print ("Strong")
+else:
+    print("Weak")
+===========================================================
+4.Palindrome or not:
+Program:
+def palindrome(string): 
+    string=string.replace("","").lower()
+    return string==string[::-1] 
+print(palindrome("racecar"))  
+============================================================
+    
