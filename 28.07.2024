@@ -1,0 +1,40 @@
+1.Decimal to binary :
+program :
+def convbin(n):
+  if n>1:
+       convbin(n//2)
+  print(n%2,end="")
+print("The binary of the given number:")
+
+n=input()
+convbin(n)
+=====================================================================
+2.Positive or Negative :
+program :
+number = float(input("Enter a number: "))
+if number > 0:
+    print("The number is positive.")
+elif number < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.)
+=====================================================================
+3.Square root :
+program :
+num=int(input("Enter a number "))
+a=num**0.5
+print(f"The square of the number is{a}")
+======================================================================
+4.Converting string into a tuple :
+progam :
+a = input("Enter a string")
+res= list(enumerate(a))
+print(res)
+====================================================================
+5.Find the smallest string in a given list:
+program:
+list1 = ["Virat Kohli", "Mahendra Singh Dhoni", "Abraham De Villiers", "Chris Gayle", "James Anderson"]
+s = min(list1, key=len)
+
+print(f"the smallest string is {s}")
+========================================================================
