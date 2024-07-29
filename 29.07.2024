@@ -1,1 +1,47 @@
+1.Check the given character is vowel or not:
+Program:
 
+string = input("Enter a string: ").lower()
+vowels = "aeiou"
+count = {vowel: 0 for vowel in vowels}
+
+for char in string:
+    if char in vowels:
+        count[char] += 1
+
+print("Vowel counts:", count)
+============================================================
+2.Converting decimal into binary,octal and hexadecimal:
+program:
+
+decimal = int(input("Enter a decimal number: "))
+
+print("Binary:", bin(decimal))
+print("Octal:", oct(decimal))
+print("Hexadecimal:", hex(decimal))
+==========================================================
+3.Print the area of a square:
+program:
+
+def a(s):
+    return s ** 2
+side_length = float(input("Enter the side length of the square: "))
+b= a(si)
+print(f"The area of the square is: {b}")
+==============================================================
+4.Converting tuples into dictionary:
+program:
+
+tuples_list = [('a', 1), ('b', 2), ('c', 3)]
+dictionary = dict(tuples_list)
+print(dictionary)
+================================================================
+5.Printing the star pattern:
+program:
+
+n = 5
+for i in range(n):
+    for j in range(n - i):
+        print('*', end='')
+    print()
+===========================================================
