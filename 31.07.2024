@@ -1,0 +1,48 @@
+1.Counting binary numbers:
+program:
+a=int(input())
+c=0
+while (a!=0):
+    if(a%2==1):
+        c+=1
+    a//=2
+print(c)
+========================================================
+2.Switching Elements:
+Program:
+a=int(input())
+lst=[]
+for i in range(a):
+    x=int(input())
+    lst.append(x)
+print("TO interchange first and last element")
+temp=lst[0]
+lst[0]=lst[-1]
+lst[-1]=temp
+==========================================================
+3.Symmentric Difference:
+Program:
+m=input()
+m1=set(map(int,input().split()))
+n=input()
+n1=set(map(int,input().split()))
+k=sorted(set.symmetric_difference(n1,m1))
+for i in k:
+    print(i)
+==================================================================
+4.Changing lowercase words to uppercase:
+Program:
+def to_uppercase(s):
+    return s.upper()
+
+input_string = "hello"
+print("Uppercase string:", to_uppercase(input_string))
+=======================================================================
+5.Palindrome:
+Program:
+def is_palindrome(s):
+    return s == s[::-1]
+
+input_string = "MALAYALAM"
+print("Is palindrome:", is_palindrome(input_string))
+=============================================================================
