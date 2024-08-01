@@ -1,0 +1,49 @@
+1.Fahrenheit to celcius:
+Program:
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+fahrenheit = input()
+print(f"{fahrenheit}°F is {fahrenheit_to_celsius(fahrenheit)}°C.")
+===================================================================
+2.GCD:
+Program:
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+num1, num2 = 48, 18
+print(f"The GCD of {num1} and {num2} is {gcd(num1, num2)}.")
+======================================================================
+3.LCM:
+Program:
+def lcm(a, b):
+    def gcd(x, y):
+        while y:
+            x, y = y, x % y
+        return x
+
+    return abs(a * b) // gcd(a, b)
+
+num1, num2 = 48, 18
+print(f"The LCM of {num1} and {num2} is {lcm(num1, num2)}.")
+===================================================================
+4.Printing Multiplication Table:
+Program:
+def multiplication_table(n):
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n * i}")
+
+num = int(input("Enter number"))
+multiplication_table(num)
+=====================================================================
+5.Finding Radius of a circle:
+Program:
+import math
+def area_of_circle(radius):
+    return math.pi * (radius ** 2)
+
+radius = input()
+print(f"Area of the circle with radius {radius} is {area_of_circle(radius)}")
+=====================================================================
