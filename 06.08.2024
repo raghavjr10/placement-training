@@ -1,0 +1,48 @@
+1.Print the 2nd highest score in a given string:
+Program:
+if __name__ == '__main__':
+    n = int(input())  
+    scores = map(int,input().split())  
+    scores_list = list(set(scores))  
+    sorted_scores = sorted(scores_list, reverse=True)
+    print(sorted_scores[1])
+=================================================================
+2.Swapping the cases:
+Program:
+def swap_case(s):
+    k=""
+    for i in s:
+        if i>='A' and i<='Z':
+            k+=i.lower()
+        elif i>='a' and i<='z':
+            k+=i.upper()
+        else:
+            k+=i
+    return k
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
+========================================================================
+3.Remove an element in a given String:
+Program:
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        co=0
+        for i in range(0,len(nums)):
+            if nums[i]!=val:
+                nums[co]=nums[i]
+                co+=1
+        return co
+======================================================================
+4.Fibonacci Sequence:
+Program:
+def fibonacci(n):
+    sequence = []
+    a, b = 0, 1
+    while len(sequence) < n:
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+==========================================================================
